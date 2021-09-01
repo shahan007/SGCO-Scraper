@@ -1,2 +1,2 @@
 # SGCO-Scraper-Oct8
-Internship Oct 8 Scraper
+Internship project Oct 8 Scraper
