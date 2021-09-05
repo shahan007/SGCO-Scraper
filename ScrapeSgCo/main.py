@@ -98,9 +98,8 @@ def scrape_data(link_array, headers):
             final_data[data_needed[i]] = "".join(
                 cleaned_data[start_index:stop_index].split(':')[1:]).strip() or None
         try:
-            final_data[data_needed[-1]] = cleaned_data[data_needed_index[-1]                                                       :].split(':')[1].strip() or None
-            final_data['Company'] = cleaned_data[:data_needed_index[0]
-                                                 ].strip() or None
+            final_data[data_needed[-1]] = cleaned_data[data_needed_index[-1]:].split(':')[1].strip() or None
+            final_data['Company'] = cleaned_data[:data_needed_index[0]].strip() or None
         except:
             pass
         try:
