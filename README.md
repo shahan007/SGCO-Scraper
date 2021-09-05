@@ -3,6 +3,12 @@ Internship project to automate marketing & sales team work.<br>
 This scraper scrape all the types, categories and details of the Singapore Companies that are listed on the web
 <br><br>
 
+### Note !
+NotebookReview is just a dir that runs the exact scraper from jupyter notebook<br>
+Upon cloning the repo if you don't want to view the Notebook you can simply delete it as the <br>
+executable **python script** resides in **ScrapeSgCo** package and you just need to **run** the **main.py** as located in the base dir
+<br><br>
+
 ## How to run ?
 
 #### Clone the repo
