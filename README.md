@@ -1,6 +1,6 @@
 # SGCO-Scraper-Oct8
 Internship project to automate marketing & sales team work.<br>
-This scraper scrape all the types, categories and details of the Singapore Companies that are listed on the [web](http://singapore-companies-directory.com/sitemap.htm)
+This scraper scrape all the types, categories and details of the Singapore Companies that are listed on the [web](http://singapore-companies-directory.com/sitemap.htm){:target="_blank" rel="noopener"}
 <br><br>
 
 ### Note !
