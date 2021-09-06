@@ -31,6 +31,7 @@ $ source venv/Scripts/activate
 ```
 <br><br>
 <hr>
+
 #### Optional (convert data.json to excel file for excel experts)
 ```bash
 (venv) $ python convert_to_excel.py
