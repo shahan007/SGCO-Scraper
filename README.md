@@ -29,10 +29,9 @@ $ source venv/Scripts/activate
 ```bash
 (venv) $ python main.py
 ```
-<br><br>
-<hr>
-
-#### Optional (convert data.json to excel file for excel experts)
+#### _Optional (convert data.json to excel file for excel experts)_
 ```bash
 (venv) $ python convert_to_excel.py
 ```
+## License
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](https://github.com/shahan007/SGCO-Scraper/blob/main/LICENSE) file for details
