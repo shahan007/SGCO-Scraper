@@ -1,7 +1,7 @@
 # SGCO-Scraper-Oct8
 Internship project to automate marketing & sales team work.<br>
 This scraper scrape all the types, categories and details of the Singapore Companies that are listed on the [web](http://singapore-companies-directory.com/sitemap.htm)<br>
-Scraped & Cleaned data is located in DataOutput: [data.json](https://github.com/shahan007/SGCO-Scraper/blob/main/DataOutput/data.json) ; [data.xlsx](https://github.com/shahan007/SGCO-Scraper/blob/main/DataOutput/data.xlsx)
+Scraped & Cleaned data is located in DataOutput: [data.json](https://github.com/shahan007/SGCO-Scraper/blob/main/DataOutput/data.json) ; [data.xlsx](https://github.com/shahan007/SGCO-Scraper/blob/main/DataOutput/data.xlsx) ; [extra_cleaned_data.xlsx](https://github.com/shahan007/SGCO-Scraper/blob/main/DataOutput/extra_cleaned_data.xlsx)
 <br><br>
 
 ### Note !
@@ -33,6 +33,12 @@ $ source venv/Scripts/activate
 #### _Optional (convert data.json to excel file for excel experts)_
 ```bash
 (venv) $ python convert_to_excel.py
+```
+
+#### _Optional (further clean the generated excel file)_
+_(further clean data.xlsx file for easier usage of the data) (pre-req is the availability of data.xlsx file resulted from the execution of the convert_to_excel.py )_ <br>
+```bash
+(venv) $ python xtra_clean_excel.py
 ```
 ## License
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](https://github.com/shahan007/SGCO-Scraper/blob/main/LICENSE) file for details
