@@ -1,4 +1,5 @@
 # --------- Imports ---------
+from get_path_to_datafiles import get_path_to_data_file
 import re
 import pandas as pd
 import numpy as np
@@ -32,7 +33,9 @@ def check_address_in(array):
 # --------- Script ---------
 def main():
     try:        
-        df = pd.read_excel("./DataOutput/data.xlsx")
+        fileName = "data.xlsx"
+        filePath = get_path_to_data_file(fileName)
+        df = pd.read_excel(filePath)
     except:
         print("\n\nOoops File doesn't exists !\n\n")
     else:
@@ -47,9 +50,12 @@ def main():
         second_missAddrr = second_missAddrr[second_missAddrr["Contact"].apply(no_digit)]
         second_missAddrr = second_missAddrr['Contact'].str.split().apply(check_address_in).apply(pd.Series).rename(columns={0:"Contact",1:"Address"})
         df.loc[second_missAddrr.index,["Contact","Address"]] = second_missAddrr.values        
-        df.to_excel('./DataOutput/extra_cleaned_data.xlsx',index=False,engine="openpyxl")
+        outFilePath = get_path_to_data_file("extra_cleaned_data.xlsx")
+        df.to_excel(outFilePath,index=False,engine="openpyxl")
         
         print("\n\nCleaning done: you can find the cleaned excel file ./DataOutput/extra_cleaned_data.xlsx\n\n")
 
 if __name__ == "__main__":
+    print("Running ! ")
     main()
+    print("\nEnd\n")
