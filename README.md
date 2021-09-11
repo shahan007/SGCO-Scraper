@@ -5,11 +5,10 @@ Scraped & Cleaned data is located in DataOutput: [data.json](https://github.com/
 <br><br>
 
 ### Note !
-NotebookReview is just a dir that runs the exact scraper from jupyter notebook<br>
-Upon cloning the repo if you don't want to view the Notebook you can simply delete it as the <br>
+**ScrapeSgCo** package is the scraper<br>
 executable **python script** resides in **ScrapeSgCo** package and you just need to **run** the **main.py** as located in the base dir<br>
 **Output** of the main.py script will be the cleaned scraped data stored in data.json located in DataOutput dir<br>
-**To convert the data.json to excel file** simply execute convert_to_excel.py<br>
+**To convert the data.json to excel file** simply execute convert_to_excel.py located in **excel_util_scripts**<br>
 <br><br>
 
 ## How to run ?
