@@ -30,6 +30,7 @@ $ source venv/Scripts/activate
 ```bash
 (venv) $ python main.py
 ```
+<br><hr>
 #### _Optional (convert data.json to excel file for excel experts)_
 ```bash
 (venv) $ python ./excel_util_scripts/convert_to_excel.py
